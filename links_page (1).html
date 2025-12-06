@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHC Distribuciones - Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(135deg, #8B0000 0%, #1a1a1a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .profile .subtitle {
+            font-size: 14px;
+            color: #6B1818;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+
+        .profile p {
+            color: #333;
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px 25px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-color: #6B1818;
+        }
+
+        .link-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            border: none;
+        }
+
+        .link-btn.whatsapp-asesor {
+            background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+            color: white;
+            border: none;
+        }
+
+        .link-btn.tienda {
+            background: linear-gradient(135deg, #6B1818 0%, #4d0000 100%);
+            color: white;
+            border: none;
+        }
+
+        .link-btn.mercadolibre {
+            background: linear-gradient(135deg, #FFE600 0%, #FFC700 100%);
+            color: #333;
+            border: none;
+            font-weight: 700;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .profile h1 {
+                font-size: 28px;
+            }
+            
+            .link-btn {
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <h1>SHC DISTRIBUCIONES</h1>
+            <p class="subtitle">SERVICIO, HONESTIDAD Y CONFIANZA</p>
+            <p>Filosofía y compromiso en todos los aspectos de nuestra empresa, garantizando una atención diferente y de excelencia</p>
+        </div>
+
+        <div class="links">
+            <a href="https://wa.me/5491234567890?text=Hola,%20quiero%20hacer%20una%20compra" class="link-btn whatsapp" target="_blank">
+                <span class="icon">💬</span>
+                <span>WhatsApp Ventas</span>
+            </a>
+
+            <a href="https://wa.me/5491234567890?text=Hola,%20necesito%20asesoramiento" class="link-btn whatsapp-asesor" target="_blank">
+                <span class="icon">📞</span>
+                <span>WhatsApp Asesoramiento</span>
+            </a>
+
+            <a href="https://tu-tienda.com" class="link-btn tienda" target="_blank">
+                <span class="icon">🛍️</span>
+                <span>Comprar en Tienda Online</span>
+            </a>
+
+            <a href="https://www.mercadolibre.com.ar/perfil/TU_USUARIO" class="link-btn mercadolibre" target="_blank">
+                <span class="icon">🛒</span>
+                <span>Comprar en Mercado Libre</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>SHC Distribuciones - Todos los derechos reservados</p>
+        </div>
+    </div>
+</body>
+</html>
